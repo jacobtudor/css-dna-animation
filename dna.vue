@@ -42,8 +42,32 @@
                 <div class="circle"></div>
                 <div class="line"></div>
             </div>
+            <div class="strand">
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
+            <div class="strand">
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
+            <div class="strand">
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
         </div>
         <div class="row row2">
+            <div class="strand">
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
+            <div class="strand">
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
+            <div class="strand">
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
             <div class="strand">
                 <div class="circle"></div>
                 <div class="line"></div>
@@ -175,6 +199,18 @@ $color2:greenyellow;
         //animation-delay: calc(0.25s * 8);
         animation-delay: 2250ms;
     }
+    .strand:nth-child(11) .circle, .strand:nth-child(11) .line { 
+        //animation-delay: calc(0.25s * 8);
+        animation-delay: 2500ms;
+    }
+    .strand:nth-child(12) .circle, .strand:nth-child(12) .line { 
+        //animation-delay: calc(0.25s * 8);
+        animation-delay: 2750ms;
+    }
+    .strand:nth-child(13) .circle, .strand:nth-child(13) .line { 
+        //animation-delay: calc(0.25s * 8);
+        animation-delay: 3000ms;
+    }
 }
 // .row1, .row2 {
 //     .circle {
@@ -276,18 +312,19 @@ $color2:greenyellow;
         top: 0%
     }
     25% {
-        background-color: $color2;
-        scale: 0.75;
+        //background-color: $color2;
+        //scale: 0.75;
         top: calc(100% - $circlediameter)
     }
     50% {
-        background-color: $color2;
-        scale: 0.5;
+        //background-color: $color2;
+        scale: 1;
         top: calc(200% - $circlediameter)
     }
     75% {
         background-color: $color2;
-        scale: 0.75;
+        //scale: 0.75;
+        scale: 0.75; 
         top: calc(100% - $circlediameter)
     }
     100% {
@@ -302,20 +339,32 @@ $color2:greenyellow;
         scale: 1;
         bottom: 0%
     }
+    // 25% {
+    //     //background-color: $color2;
+    //     //scale: 0.75;
+    //     bottom: calc(100% - $circlediameter);
+    // }
     25% {
         background-color: $color2;
-        scale: 0.75;
-        bottom: calc(100% - $circlediameter);
+        //scale: 0.75;
+        scale: 0.5;
+        bottom: calc(100% - $circlediameter)
     }
     50% {
-        background-color: $color2;
-        scale: 0.5;
+        //background-color: $color2;
+        scale: 1;
         bottom: calc(200% - $circlediameter)
     }
-    75% {
-        background-color: $color2;
-        scale: 0.75;
-        bottom: calc(100% - $circlediameter)
+    // 75% {
+    //     background-color: $color2;
+    //     //scale: 0.75;
+    //     scale: 0.5;
+    //     bottom: calc(100% - $circlediameter)
+    // }
+    25% {
+        //background-color: $color2;
+        //scale: 0.75;
+        bottom: calc(100% - $circlediameter);
     }
     100% {
         background-color: $color1;
@@ -329,7 +378,7 @@ $color2:greenyellow;
     width: $linewidth;
     height: 80%;
     margin: 1px 2px;
-    background-color: rgb(88, 241, 88);
+    background-color: $color1;
     animation-name: linescale;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
@@ -344,7 +393,7 @@ $color2:greenyellow;
         animation-play-state: running;
     }
     25% {
-        background-color: $color2;
+        //background-color: $color2;
         height: 0%;
     }
     26% {
@@ -358,7 +407,7 @@ $color2:greenyellow;
         animation-play-state: running;
     }
     75% {
-        background-color: $color2;
+        //background-color: $color2;
         height: 0%; 
     }
     76% {

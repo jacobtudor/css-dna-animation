@@ -61,6 +61,15 @@
 .row1 .strand:nth-child(10) .circle, .row1 .strand:nth-child(10) .line, .row2 .strand:nth-child(10) .circle, .row2 .strand:nth-child(10) .line {
   animation-delay: 2250ms;
 }
+.row1 .strand:nth-child(11) .circle, .row1 .strand:nth-child(11) .line, .row2 .strand:nth-child(11) .circle, .row2 .strand:nth-child(11) .line {
+  animation-delay: 2500ms;
+}
+.row1 .strand:nth-child(12) .circle, .row1 .strand:nth-child(12) .line, .row2 .strand:nth-child(12) .circle, .row2 .strand:nth-child(12) .line {
+  animation-delay: 2750ms;
+}
+.row1 .strand:nth-child(13) .circle, .row1 .strand:nth-child(13) .line, .row2 .strand:nth-child(13) .circle, .row2 .strand:nth-child(13) .line {
+  animation-delay: 3000ms;
+}
 
 .row1 .circle {
   top: 0%;
@@ -79,13 +88,10 @@
     top: 0%;
   }
   25% {
-    background-color: greenyellow;
-    scale: 0.75;
     top: calc(100% - 3px);
   }
   50% {
-    background-color: greenyellow;
-    scale: 0.5;
+    scale: 1;
     top: calc(200% - 3px);
   }
   75% {
@@ -107,17 +113,14 @@
   }
   25% {
     background-color: greenyellow;
-    scale: 0.75;
+    scale: 0.5;
     bottom: calc(100% - 3px);
   }
   50% {
-    background-color: greenyellow;
-    scale: 0.5;
+    scale: 1;
     bottom: calc(200% - 3px);
   }
-  75% {
-    background-color: greenyellow;
-    scale: 0.75;
+  25% {
     bottom: calc(100% - 3px);
   }
   100% {
@@ -130,7 +133,7 @@
   width: 2px;
   height: 80%;
   margin: 1px 2px;
-  background-color: rgb(88, 241, 88);
+  background-color: green;
   animation-name: linescale;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
@@ -146,7 +149,6 @@
     animation-play-state: running;
   }
   25% {
-    background-color: greenyellow;
     height: 0%;
   }
   26% {
@@ -160,7 +162,6 @@
     animation-play-state: running;
   }
   75% {
-    background-color: greenyellow;
     height: 0%;
   }
   76% {
