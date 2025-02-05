@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "compile:sass": "sass dna.scss dna.css",
+        "watch:sass": "sass --watch dna.scss:dna.css"
+    }
+}
